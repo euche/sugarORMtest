@@ -27,7 +27,7 @@ public class listcontact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listcontact);
 
-//        s1 = findViewById(R.id.update_contact);
+        s1 = findViewById(R.id.update_contact);
 
         s = findViewById(R.id.contact_list);
 
@@ -53,21 +53,21 @@ public class listcontact extends AppCompatActivity {
 //        contactaAdapter adapter = new contactaAdapter(listcontact.this,data);
 //        s.setAdapter(adapter);
 
-//         s1.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//             @Override
-//             public void onRefresh() {
-//
-//                 s1.setRefreshing(false);
+         s1.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+             @Override
+             public void onRefresh() {
+
+                 s1.setRefreshing(false);
 
 
-//                getData();
+                getData();
 
 
 //                 after getting the data
-//
-//
-//             }
-//         });
+
+
+             }
+         });
 
 
 
